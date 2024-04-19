@@ -37,7 +37,7 @@ def trainer(args):
         num_train_epochs=args.num_epochs,
         weight_decay=args.weight_decay,
         save_strategy="steps",
-        report_to="none",
+        report_to="wandb",
         evaluation_strategy = "steps",
         logging_steps = interval,
         save_steps = interval,
